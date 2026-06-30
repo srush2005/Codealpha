@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Guide AI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fas fa-robot"></i>
+            <h2>Campus AI</h2>
+        </div>
+
+        <button id="newChat" class="new-chat">
+            <i class="fas fa-plus"></i> New Chat
+        </button>
+
+        <div class="history">
+            <h4>Recent Chats</h4>
+            <ul id="history"></ul>
+        </div>
+
+    </aside>
+
+    <main class="chat-section">
+
+        <div class="hero">
+            <h1>What do you want to know?</h1>
+            <p>
+                Ask anything about admissions, fees,
+                placements, scholarships and courses.
+            </p>
+        </div>
+
+        <div class="faq-grid">
+
+            <button class="faq-btn" data-topic="courses">
+                📚 Courses
+            </button>
+
+            <button class="faq-btn" data-topic="admission">
+                🎓 Admissions
+            </button>
+
+            <button class="faq-btn" data-topic="fees">
+                💰 Fees
+            </button>
+
+            <button class="faq-btn" data-topic="placements">
+                💼 Placements
+            </button>
+
+            <button class="faq-btn" data-topic="hostel">
+                🏠 Hostel
+            </button>
+
+            <button class="faq-btn" data-topic="scholarship">
+                🏆 Scholarship
+            </button>
+
+        </div>
+
+        <div class="chat-box" id="chatBox">
+
+            <div class="bot-msg">
+                👋 Welcome! Ask me anything about the college.
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+            type="text"
+            id="userInput"
+            placeholder="Ask anything...">
+
+            <button id="sendBtn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
